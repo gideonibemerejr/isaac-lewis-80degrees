@@ -1,5 +1,5 @@
-import ContactPage from '../ContactPage'
-import HomePage from '../HomePage'
+import ContactPage from './ContactPage'
+import HomePage from './HomePage'
 
 export {
     ContactPage,
