@@ -9,7 +9,7 @@ const App = () => {
     <div className="sans-serif ma3">
       <nav className='red flex justify-between items-center'>
         <div className="link">
-          <Link to="/" className="ml2 link"><h2>Issac Lewis</h2></Link>
+          <Link to="/" className="link"><h2 className='f2 ma0'>Issac Lewis</h2></Link>
         </div>
         <ul className="pa0 flex justify-around list">
 
