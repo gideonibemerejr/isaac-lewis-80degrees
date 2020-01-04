@@ -14,7 +14,7 @@ const App = () => {
         <ul className="pa0 flex justify-around list">
 
           <li>
-            <a className='link' href="http//shop.pareiovision.com">Shop</a>
+            <a rel='noopener noreferrer' target='_blank' className='link' href="http://shop.pareiovision.com">Shop</a>
           </li>
           <li>
             <Link to='/' className="ml2 link">Listen</Link>
