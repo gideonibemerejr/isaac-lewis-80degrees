@@ -8,13 +8,13 @@ const App = () => {
   return (
   <Router>
     <div className="sans-serif bg-black">
-      <nav className='flex-ns flex-column justify-center items-center pa2'>
-        <div className="link flex justify-center items-center">
-          <div className="w-75 ma3">
+      <nav className='flex flex-column-m justify-center justify-between-ns items-center pa4'>
+        {/*<div className="link flex justify-center items-center justify-between-ns">*/}
+          <div className="w-25-l">
             <Link to="/" className="link">
               <img src={logo} alt=""/>
             </Link>
-          </div>
+          {/*</div>*/}
         </div>
         <ul className="pa0 flex justify-around list">
           <li>
@@ -36,5 +36,4 @@ const App = () => {
   </Router>
   )
 }
-a
 export default App;
