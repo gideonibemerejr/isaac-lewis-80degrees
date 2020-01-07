@@ -24,7 +24,7 @@ const App = () => {
             <Link to='/' className="ml2 link white">Listen</Link>
           </li>
           <li>
-            <Link to='/contact' className="ml2 link white">Contact</Link>
+            <Link to='/contact' className="ml2 link white">Contac TEst t</Link>
           </li>
           </ul>
       </nav>
@@ -36,5 +36,5 @@ const App = () => {
   </Router>
   )
 }
-
+a
 export default App;
