@@ -81,7 +81,7 @@ class App extends Component {
               </div>
             <ul className="pa0 flex justify-around list mt4 mt0-l mb0">
                 <li>
-                    <Link to='/' className="mh4 link white dim">Home</Link>
+                    <Link to='/' className="mr4 link white dim">Home</Link>
                 </li>
                 <li>
                     <Link to='/listen' className="mr4 link white dim">Listen</Link>
