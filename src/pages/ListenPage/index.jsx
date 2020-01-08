@@ -5,13 +5,13 @@ import React from "react";
 
 const ListenPage = () => {
     return (
-        <article className='flex flex-column justify-center items-center vh-75 w-100'>
+        <article className='flex flex-column justify-center items-center vh-75-l w-100'>
             <inner className='flex flex-column justify-center items w-75'>
                 <div className='pa2 ml4'>
-                    <h2 className='f-headline-l f1'>Listen</h2>
+                    <h2 className='f1'>Listen</h2>
                 </div>
                 <div className="cf pa2 ">
-                    <div className="fl w-100 w-25-m w-20-l ma4">
+                    <div className="fl w-100 w-25-m w-20-l ma4-ns ma0-ns">
                         <a href="https://lnkfi.re/7WnC3Ac5"
                            className="db link dim tc">
                             <img
@@ -25,7 +25,7 @@ const ListenPage = () => {
                             </dl>
                         </a>
                     </div>
-                    <div className="fl w-100 w-25-m w-20-l ma4">
+                    <div className="fl w-100 w-25-m w-20-l ma4-ns ma0">
                         <a href="https://lnkfi.re/6YXt6bcI"
                            className="db link dim tc">
                             <img
@@ -39,7 +39,7 @@ const ListenPage = () => {
                             </dl>
                         </a>
                     </div>
-                    <div className="fl w-100 w-25-m w-20-l ma4">
+                    <div className="fl w-100 w-25-m w-20-l ma4-ns ma0">
                         <a href="https://lnkfi.re/rWAOPbGC"
                            className="db link dim tc">
                             <img
@@ -53,7 +53,7 @@ const ListenPage = () => {
                             </dl>
                         </a>
                     </div>
-                    <div className="fl w-100 w-25-m w-20-l ma4">
+                    <div className="fl w-100 w-25-m w-20-l ma4-ns ma0 ma0">
                         <a href="https://ditto.fm/80-degrees-velvet"
                            className="db link dim tc">
                             <img
