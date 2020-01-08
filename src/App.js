@@ -87,7 +87,7 @@ class App extends Component {
                     <Link to='/listen' className="mr4 link white dim">Listen</Link>
                 </li>
               <li className='flex justify-between w-100 link white dim ma0'>
-                  <span className='mr2-ns mr1 yellow' style={{ fontSize: '.25rem'}}><p>Coming Soon</p></span>
+                  <span className='mr2-ns yellow' style={{ fontSize: '.25rem'}}><p>Coming Soon</p></span>
                   <p
                       disabled
                       rel='noopener noreferrer'
