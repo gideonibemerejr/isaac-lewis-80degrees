@@ -7,7 +7,7 @@ const ListenPage = () => {
     return (
         <article className='flex flex-column justify-center items-center vh-75-l w-100'>
             <inner className='flex flex-column justify-center items w-75'>
-                <div className='pa2 ml4'>
+                <div className='pa2 ml4-ns ml0 tc tl-ns'>
                     <h2 className='f1'>Listen</h2>
                 </div>
                 <div className="cf pa2 ">
