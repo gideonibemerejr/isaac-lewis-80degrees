@@ -9,17 +9,17 @@ class App extends Component {
   render() {
     return (
         <Router>
-          <nav className='flex-column flex-l justify-center justify-between-l items-center items-start-l'>
+          <nav className='flex-column-m flex-l justify-center justify-between-l items-center'>
             {/*<div className="link flex justify-center items-center justify-between-ns">*/}
+              <div className=" ma0 w-25-l relative flex-column justify-start-l justify-center items-center">
             <Link to="/" className="link dim">
-              <div className=" ma0 w-25-ladd relative flex-column justify-start-l justify-center items-center">
                 <img src={logo} alt=""/>
-                <img src={logo} alt=""/>
-                <img src={logo} alt=""/>
+                {/*<img src={logo} alt=""/>*/}
+                {/*<img src={logo} alt=""/>*/}
               {/*</div>*/}
-              </div>
             </Link>
-            <ul className="pa0 flex justify-around list mt4 mt0-l">
+              </div>
+            <ul className="pa0 flex justify-around list mt4 mt0-l mb0">
               <li>
                 <a rel='noopener noreferrer' target='_blank' className='link white dim' href="http://shop.pareiovision.com">Shop</a>
               </li>
