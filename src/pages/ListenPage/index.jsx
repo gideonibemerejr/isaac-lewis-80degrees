@@ -21,7 +21,7 @@ const ListenPage = () => {
                                 <dt className="clip">Title</dt>
                                 <dd className="ml0 white truncate w-100">Dim</dd>
                                 <dt className="clip">Artist</dt>
-                                <dd className="ml0 gray truncate w-100">Issac Lewis</dd>
+                                <dd className="ml0 gray truncate w-100">Isaac Lewis</dd>
                             </dl>
                         </a>
                     </div>
@@ -35,7 +35,7 @@ const ListenPage = () => {
                                 <dt className="clip">Title</dt>
                                 <dd className="ml0 white truncate w-100">Fly</dd>
                                 <dt className="clip">Artist</dt>
-                                <dd className="ml0 gray truncate w-100">Issac Lewis</dd>
+                                <dd className="ml0 gray truncate w-100">Isaac Lewis</dd>
                             </dl>
                         </a>
                     </div>
@@ -49,7 +49,7 @@ const ListenPage = () => {
                                 <dt className="clip">Title</dt>
                                 <dd className="ml0 white truncate w-100">Pareidolia</dd>
                                 <dt className="clip">Artist</dt>
-                                <dd className="ml0 gray truncate w-100">Issac Lewis</dd>
+                                <dd className="ml0 gray truncate w-100">Isaac Lewis</dd>
                             </dl>
                         </a>
                     </div>
@@ -63,7 +63,7 @@ const ListenPage = () => {
                                 <dt className="clip">Title</dt>
                                 <dd className="ml0 white truncate w-100">80 Degrees/Velvet</dd>
                                 <dt className="clip">Artist</dt>
-                                <dd className="ml0 gray truncate w-100">Issac Lewis</dd>
+                                <dd className="ml0 gray truncate w-100">Isaac Lewis</dd>
                             </dl>
                         </a>
                     </div>
