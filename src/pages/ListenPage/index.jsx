@@ -12,7 +12,8 @@ const ListenPage = () => {
                 </div>
                 <div className="cf pa2 ">
                     <div className="fl w-100 w-25-m w-20-l ma4-ns ma0-ns">
-                        <a href="https://lnkfi.re/7WnC3Ac5"
+                        <a rel='noopener noreferrer'
+                           target='_blank'href="https://lnkfi.re/7WnC3Ac5"
                            className="db link dim tc">
                             <img
                                 src="https://s.mxmcdn.net/images-storage/albums4/4/6/0/3/2/8/42823064_350_350.jpg"
@@ -26,7 +27,9 @@ const ListenPage = () => {
                         </a>
                     </div>
                     <div className="fl w-100 w-25-m w-20-l ma4-ns ma0">
-                        <a href="https://lnkfi.re/6YXt6bcI"
+                        <a rel='noopener noreferrer'
+                           target='_blank'
+                           href="https://lnkfi.re/6YXt6bcI"
                            className="db link dim tc">
                             <img
                                 src="https://s.mxmcdn.net/images-storage/albums4/0/2/6/7/2/7/37727620_350_350.jpg"
@@ -40,7 +43,9 @@ const ListenPage = () => {
                         </a>
                     </div>
                     <div className="fl w-100 w-25-m w-20-l ma4-ns ma0">
-                        <a href="https://lnkfi.re/rWAOPbGC"
+                        <a rel='noopener noreferrer'
+                           target='_blank'
+                            href="https://lnkfi.re/rWAOPbGC"
                            className="db link dim tc">
                             <img
                                 src="https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/c6/e9/79/c6e9799f-cf1a-4926-afd3-42899fa6717d/artwork.jpg/804x0w.jpg"
@@ -54,7 +59,9 @@ const ListenPage = () => {
                         </a>
                     </div>
                     <div className="fl w-100 w-25-m w-20-l ma4-ns ma0 ma0">
-                        <a href="https://ditto.fm/80-degrees-velvet"
+                        <a rel='noopener noreferrer'
+                           target='_blank'
+                           href="https://ditto.fm/80-degrees-velvet"
                            className="db link dim tc">
                             <img
                                 src="https://d9nqml74o2sdi.cloudfront.net/605dda66-46cf-4774-b70d-98f5b9eeefa9.9075732d-0bbc-43f3-a1d4-0c147f8d34d1"
