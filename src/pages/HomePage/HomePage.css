@@ -3,4 +3,12 @@
 }
 .cover-image {
     max-width: 40vw;
+    min-width: 400px;
+}
+
+
+@media screen and (min-width: 60em) {
+    .logo {
+        width: 15%;
+    }
 }
