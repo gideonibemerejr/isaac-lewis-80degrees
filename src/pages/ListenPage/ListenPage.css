@@ -1,0 +1,16 @@
+@media screen and (min-width: 60em) {
+
+    .album {
+        width: 33vmin;
+    }
+    .albums {
+        height: 90vh;
+    }
+}
+
+
+@media screen and (max-width: 60em) and (min-width: 30em) {
+    .album {
+        width: 20%
+    }
+}
