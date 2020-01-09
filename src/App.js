@@ -11,7 +11,6 @@ class App extends Component {
 
       this.images.forEach((image, idx) => {
         if (idx === 0 ) {
-            
             return
         } else if (idx === 1 ) {
             
@@ -86,20 +85,20 @@ class App extends Component {
                 <li>
                     <Link to='/listen' className="mr4 link white dim">Listen</Link>
                 </li>
-              <li className='flex justify-between w-100 link white dim ma0'>
-                  <span className='mr2-ns yellow' style={{ fontSize: '.25rem'}}><p>Coming Soon</p></span>
-                  <p
-                      disabled
-                      rel='noopener noreferrer'
-                      target='_blank'
-                      className='ma0'
-                      href="http://shop.pareiovision.com">
-                      Shop
-                  </p>
-              </li>
+              {/*<li className='flex justify-between w-100 link white dim ma0'>*/}
+              {/*    */}
+              {/*    <p*/}
+              {/*        disabled*/}
+              {/*        rel='noopener noreferrer'*/}
+              {/*        target='_blank'*/}
+              {/*        className='ma0'*/}
+              {/*        href="http://shop.pareiovision.com">*/}
+              {/*        Shop*/}
+              {/*    </p>*/}
+              {/*</li>*/}
 
               <li>
-                <Link to='/contact' className="ml4 link white dim">Contact</Link>
+                <Link to='/contact' className="mr4 link white dim">Contact</Link>
               </li>
             </ul>
           </nav>

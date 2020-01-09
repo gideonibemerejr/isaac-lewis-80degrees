@@ -13,7 +13,7 @@ const ListenPage = () => {
                 <div className="cf pa2 ">
                     <div className="fl w-100 w-25-m w-20-l ma4-ns ma0-ns">
                         <a rel='noopener noreferrer'
-                           target='_blank'href="https://lnkfi.re/7WnC3Ac5"
+                           target='_blank' href="https://lnkfi.re/7WnC3Ac5"
                            className="db link dim tc">
                             <img
                                 src="https://s.mxmcdn.net/images-storage/albums4/4/6/0/3/2/8/42823064_350_350.jpg"
@@ -58,6 +58,22 @@ const ListenPage = () => {
                             </dl>
                         </a>
                     </div>
+                    <div className="fl w-100 w-25-m w-20-l ma4-ns ma0">
+                        <a rel='noopener noreferrer'
+                           target='_blank'
+                            href="https://lnkfi.re/PR199bUe"
+                           className="db link dim tc">
+                            <img
+                                src="https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/c6/e9/79/c6e9799f-cf1a-4926-afd3-42899fa6717d/artwork.jpg/804x0w.jpg"
+                                alt="Frank Ocean Blonde Album Cover" className="w-100 db outline black-10"/>
+                            <dl className="mt2 f6 lh-copy">
+                                <dt className="clip">Title</dt>
+                                <dd className="ml0 white truncate w-100">Pareidolia</dd>
+                                <dt className="clip">Artist</dt>
+                                <dd className="ml0 gray truncate w-100">Isaac Lewis</dd>
+                            </dl>
+                        </a>
+                    </div>
                     <div className="fl w-100 w-25-m w-20-l ma4-ns ma0 ma0">
                         <a rel='noopener noreferrer'
                            target='_blank'
@@ -81,6 +97,6 @@ const ListenPage = () => {
 
         </article>
     )
-}
+};
 
 export default ListenPage
