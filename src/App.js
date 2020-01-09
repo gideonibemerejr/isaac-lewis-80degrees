@@ -7,6 +7,20 @@ import React, {Component} from 'react';
 
 
 class App extends Component {
+    state = {
+        shopStatus: 'Shop'
+    }
+
+    handleShopStatusOver = (e) => {
+
+
+        this.setState({shopStatus: 'Coming Soon'})
+    }
+    handleShopStatusOut = (e) => {
+
+        this.setState({shopStatus: 'Shop'})
+    }
+
     handleMouseOver = () => {
 
       this.images.forEach((image, idx) => {
@@ -45,7 +59,7 @@ class App extends Component {
     return (
         <Router>
           <nav className='flex-column-m flex-l justify-center justify-between-l items-center items-start-l'>
-            {/*<div className="link flex justify-center items-center justify-between-ns">*/}
+
             <div className=" ma0 logo w-100-m relative flex flex-column justify-start-l justify-center items-center">
             <Link onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} to="/" className="link dim w-50-m logo-image">
                 <img
@@ -78,27 +92,34 @@ class App extends Component {
               {/*</div>*/}
             </Link>
               </div>
-            <ul className="pa0 flex justify-around list mt4 mt0-l mb0">
+            <ul className="pa0 flex justify-between items-center list mt4 mt2-l mb0 w-25-l">
                 <li>
-                    <Link to='/' className="mr4 link white dim">Home</Link>
+                    <Link to='/' className=" link white dim">Home</Link>
                 </li>
                 <li>
-                    <Link to='/listen' className="mr4 link white dim">Listen</Link>
+                    <Link to='/listen' className="link white dim">Listen</Link>
                 </li>
-              {/*<li className='flex justify-between w-100 link white dim ma0'>*/}
-              {/*    */}
-              {/*    <p*/}
-              {/*        disabled*/}
-              {/*        rel='noopener noreferrer'*/}
-              {/*        target='_blank'*/}
-              {/*        className='ma0'*/}
-              {/*        href="http://shop.pareiovision.com">*/}
-              {/*        Shop*/}
-              {/*    </p>*/}
-              {/*</li>*/}
+              <li >
+
+                  <p
+                      onMouseOver={this.handleShopStatusOver}
+                      onMouseOut={this.handleShopStatusOut}
+                      disabled
+                      rel='noopener noreferrer'
+                      target='_blank'
+
+                      className='link white dim ma0'
+                      style={{
+                          color: `${this.state.shopStatus === 'Coming Soon' ? 'yellow' : ''}`
+                      }}
+                      href="http://shop.pareiovision.com">
+
+                      {this.state.shopStatus}
+                  </p>
+              </li>
 
               <li>
-                <Link to='/contact' className="mr4 link white dim">Contact</Link>
+                <Link to='/contact' className=" link white dim">Contact</Link>
               </li>
             </ul>
           </nav>
