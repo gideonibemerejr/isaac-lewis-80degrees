@@ -55,17 +55,22 @@ class Product extends Component {
     let variantQuantity = this.state.selectedVariantQuantity || 1;
     let variantSelectors = this.props.product.options.map(option => {
       return (
-        <VariantSelector
-          handleOptionChange={this.handleOptionChange}
+        <div
           key={option.id.toString()}
-          option={option}
-        />
+          className="flex flex-column justify-center items-center mb4 mh4 w-25"
+        >
+          <label className="mb2 f3">Size</label>
+          <VariantSelector
+            handleOptionChange={this.handleOptionChange}
+            option={option}
+          />
+        </div>
       );
     });
     return (
       <div className="Product flex flex-column justify-between items-center">
         {this.props.product.images.length ? (
-          <div className="product-image w-75">
+          <div className="product-image w-75 w-25-l flex justify-center">
             <img
               src={variantImage.src}
               alt={`${this.props.product.title} product shot`}
@@ -73,21 +78,24 @@ class Product extends Component {
           </div>
         ) : null}
         <h5 className="Product__title">{this.props.product.title}</h5>
-        <span className="Product__price">${variant.price}</span>
-        {variantSelectors}
-        <div className="flex flex-column justify-center mb4 w-25">
-          <label className="mb2">Quantity</label>
+        <span className="Product__price mb3">${variant.price | 0}</span>
+        <div className="w-75 flex justify-center items-center">
+          {variantSelectors}
+          <div className="flex flex-column justify-center items-center mb4 mh4 w-25">
+            <label className="mb2 f3">Qty</label>
 
-          <input
-            min="1"
-            type="number"
-            defaultValue={variantQuantity}
-            onChange={this.handleQuantityChange}
-          />
+            <input
+              className=" bg-black white quantity"
+              min="1"
+              type="number"
+              defaultValue={variantQuantity}
+              onChange={this.handleQuantityChange}
+            />
+          </div>
         </div>
 
         <button
-          className="Product__buy button"
+          className="Product__buy button w-50 w-25-ns"
           onClick={() =>
             this.props.addVariantToCart(variant.id, variantQuantity)
           }

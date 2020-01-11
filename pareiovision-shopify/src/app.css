@@ -346,13 +346,19 @@ h2 {
 .Product__option {
   display: block;
   width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+  height: 3rem;
+
   color: white;
   background-color: black;
   border: 1px solid white;
 }
-
+.quantity {
+  width: 4rem;
+  height: 3rem;
+  padding-left: 1.5rem;
+  font-size: 1.25rem;
+  border: 1px solid white;
+}
 .Product__quantity {
   display: block;
   width: 15%;
@@ -449,7 +455,8 @@ h2 {
 
 @media screen and (min-width: 60em) {
   .logo {
-    width: 15%;
+    width: 50%;
+    height: auto;
   }
   .grid-container--content {
     width: 100%;
@@ -460,6 +467,7 @@ h2 {
   }
   .logo-image img {
     position: absolute;
+    width: 25%;
     top: 0;
     left: 0;
     transition: transform 0.5s, box-shadow 0.5s;

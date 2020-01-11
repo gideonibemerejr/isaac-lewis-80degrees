@@ -120,13 +120,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="w-100 flex-l flex-column justify-center items-center ph4 pt4">
-          <div className="w-100 mv2">
+        <header className="w-100 flex-l flex-column-m justify-between ph4 pt4">
+          <div className="logo relative">
             <a
               onMouseOver={this.handleMouseOver}
               onMouseOut={this.handleMouseOut}
               to="/"
-              className="link dim w-50-m logo-image"
+              className="link dim logo-image mh4"
             >
               <img
                 src={logo}
