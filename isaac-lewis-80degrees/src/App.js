@@ -5,17 +5,6 @@ import { ContactPage, HomePage, ListenPage } from "./pages";
 import React, { Component } from "react";
 
 class App extends Component {
-  state = {
-    shopStatus: "Shop"
-  };
-
-  handleShopStatusOver = e => {
-    this.setState({ shopStatus: "Coming Soon" });
-  };
-  handleShopStatusOut = e => {
-    this.setState({ shopStatus: "Shop" });
-  };
-
   handleMouseOver = () => {
     this.images.forEach((image, idx) => {
       if (idx === 0) {
@@ -90,22 +79,15 @@ class App extends Component {
               </Link>
             </li>
             <li>
-              <p
-                onMouseOver={this.handleShopStatusOver}
-                onMouseOut={this.handleShopStatusOut}
+              <a
                 disabled
                 rel="noopener noreferrer"
                 target="_blank"
                 className="link white dim ma0"
-                style={{
-                  color: `${
-                    this.state.shopStatus === "Coming Soon" ? "yellow" : ""
-                  }`
-                }}
                 href="http://shop.pareiovision.com"
               >
-                {this.state.shopStatus}
-              </p>
+                Shop
+              </a>
             </li>
 
             <li>
