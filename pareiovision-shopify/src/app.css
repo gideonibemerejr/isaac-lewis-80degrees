@@ -1,8 +1,10 @@
 /* INITIALIZERS + DEFAULTS
  * ============================== */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -13,7 +15,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
@@ -39,13 +41,11 @@ h2 {
  * ============================== */
 .App__header {
   background-color: #222;
-  background-image: url('https://unsplash.it/1000/300?image=823');
-  background-size: cover;
   color: white;
   padding: 10px 10px;
 }
 
-.App__nav{
+.App__nav {
   width: 100%;
   list-style: none;
 }
@@ -123,9 +123,9 @@ h2 {
 }
 
 .Flash__message {
-  background: rgba(0,0,0,0.88);
+  background: rgba(0, 0, 0, 0.88);
   border-radius: 3px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: #ffffff;
   cursor: default;
   display: -webkit-flex;
@@ -268,7 +268,7 @@ h2 {
 }
 
 .Line-item__title {
-  color: #4E5665;
+  color: #4e5665;
   font-size: 15px;
   font-weight: 400;
 }
@@ -456,4 +456,34 @@ h2 {
   min-height: 2.64286em;
   background: #fbefee;
   color: #c23628;
+}
+
+@media screen and (max-width: 60em) {
+  .logo-image img:nth-of-type(2),
+  .logo-image img:nth-of-type(3) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .logo {
+    width: 15%;
+  }
+  .grid-container--content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .logo-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+
+  .grid-block--title > h3 {
+    font-weight: 300;
+  }
 }

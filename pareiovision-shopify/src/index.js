@@ -1,15 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import Client from 'shopify-buy';
-import './app.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import Client from "shopify-buy";
+import "../node_modules/tachyons/css/tachyons.min.css";
+import "./app.css";
 
 const client = Client.buildClient({
-  storefrontAccessToken: 'dd4d4dc146542ba7763305d71d1b3d38',
-  domain: 'graphql.myshopify.com'
+  storefrontAccessToken: "bab408ad0cdf58b10fba358077e2af05",
+  domain: "pareiovision.myshopify.com"
 });
 
-ReactDOM.render(
-  <App client={client}/>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App client={client} />, document.getElementById("root"));

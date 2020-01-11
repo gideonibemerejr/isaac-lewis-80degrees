@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import Products from './components/Products';
-import Cart from './components/Cart';
+import React, { Component } from "react";
+import Products from "./components/Products";
+import Cart from "./components/Cart";
+import logo from "../assets/Pareiovision.png";
 
 class App extends Component {
   constructor() {
@@ -20,80 +21,146 @@ class App extends Component {
   }
 
   componentWillMount() {
-    this.props.client.checkout.create().then((res) => {
+    this.props.client.checkout.create().then(res => {
       this.setState({
-        checkout: res,
+        checkout: res
       });
     });
 
-    this.props.client.product.fetchAll().then((res) => {
+    this.props.client.product.fetchAll().then(res => {
       this.setState({
-        products: res,
+        products: res
       });
     });
 
-    this.props.client.shop.fetchInfo().then((res) => {
+    this.props.client.shop.fetchInfo().then(res => {
       this.setState({
-        shop: res,
+        shop: res
       });
     });
   }
 
-  addVariantToCart(variantId, quantity){
+  addVariantToCart(variantId, quantity) {
     this.setState({
-      isCartOpen: true,
+      isCartOpen: true
     });
 
-    const lineItemsToAdd = [{variantId, quantity: parseInt(quantity, 10)}]
-    const checkoutId = this.state.checkout.id
+    const lineItemsToAdd = [{ variantId, quantity: parseInt(quantity, 10) }];
+    const checkoutId = this.state.checkout.id;
 
-    return this.props.client.checkout.addLineItems(checkoutId, lineItemsToAdd).then(res => {
-      this.setState({
-        checkout: res,
+    return this.props.client.checkout
+      .addLineItems(checkoutId, lineItemsToAdd)
+      .then(res => {
+        this.setState({
+          checkout: res
+        });
       });
-    });
   }
 
   updateQuantityInCart(lineItemId, quantity) {
-    const checkoutId = this.state.checkout.id
-    const lineItemsToUpdate = [{id: lineItemId, quantity: parseInt(quantity, 10)}]
+    const checkoutId = this.state.checkout.id;
+    const lineItemsToUpdate = [
+      { id: lineItemId, quantity: parseInt(quantity, 10) }
+    ];
 
-    return this.props.client.checkout.updateLineItems(checkoutId, lineItemsToUpdate).then(res => {
-      this.setState({
-        checkout: res,
+    return this.props.client.checkout
+      .updateLineItems(checkoutId, lineItemsToUpdate)
+      .then(res => {
+        this.setState({
+          checkout: res
+        });
       });
-    });
   }
 
   removeLineItemInCart(lineItemId) {
-    const checkoutId = this.state.checkout.id
+    const checkoutId = this.state.checkout.id;
 
-    return this.props.client.checkout.removeLineItems(checkoutId, [lineItemId]).then(res => {
-      this.setState({
-        checkout: res,
+    return this.props.client.checkout
+      .removeLineItems(checkoutId, [lineItemId])
+      .then(res => {
+        this.setState({
+          checkout: res
+        });
       });
-    });
   }
 
   handleCartClose() {
     this.setState({
-      isCartOpen: false,
+      isCartOpen: false
     });
   }
+  handleMouseOver = () => {
+    this.images.forEach((image, idx) => {
+      if (idx === 0) {
+        return;
+      } else if (idx === 1) {
+        image.style.display = `block`;
+        image.style.transform = `translateY(1.5rem)`;
+      } else {
+        image.style.display = `block`;
+        image.style.transform = `translateY(3rem)`;
+      }
+    });
+  };
+  handleMouseOut = () => {
+    this.images.forEach((image, idx) => {
+      if (idx === 0) {
+        return;
+      } else if (idx === 1) {
+        image.style.display = "";
+        image.style.transform = "";
+      } else {
+        image.style.display = "";
+        image.style.transform = "";
+      }
+    });
+  };
+  images = [];
 
   render() {
     return (
       <div className="App">
-        <header className="App__header">
-          {!this.state.isCartOpen &&
-            <div className="App__view-cart-wrapper">
-              <button className="App__view-cart" onClick={()=> this.setState({isCartOpen: true})}>Cart</button>
-            </div>
-          }
-          <div className="App__title">
-            <h1>{this.state.shop.name}: React Example</h1>
-            <h2>{this.state.shop.description}</h2>
+        <header className="w-100 flex-l flex-column justify-center items-center pa4">
+          <div className="">
+            <a
+              onMouseOver={this.handleMouseOver}
+              onMouseOut={this.handleMouseOut}
+              to="/"
+              className="link dim w-50-m logo-image"
+            >
+              <img
+                src={logo}
+                alt=""
+                ref={ref => {
+                  this.images[0] = ref;
+                }}
+              />
+              <img
+                src={logo}
+                alt=""
+                ref={ref => {
+                  this.images[1] = ref;
+                }}
+              />
+              <img
+                src={logo}
+                alt=""
+                ref={ref => {
+                  this.images[2] = ref;
+                }}
+              />
+            </a>
           </div>
+          {!this.state.isCartOpen && (
+            <div className="flex justify-center items-center ma4">
+              <button
+                className="App__view-cart"
+                onClick={() => this.setState({ isCartOpen: true })}
+              >
+                Cart
+              </button>
+            </div>
+          )}
         </header>
         <Products
           products={this.state.products}
