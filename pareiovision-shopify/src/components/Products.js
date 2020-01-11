@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import Product from './Product';
+import React, { Component } from "react";
+import Product from "./Product";
 
 class Products extends Component {
   render() {
-    let products = this.props.products.map((product) => {
+    let products = this.props.products.map(product => {
       return (
         <Product
           addVariantToCart={this.props.addVariantToCart}
@@ -14,11 +14,7 @@ class Products extends Component {
       );
     });
 
-    return (
-      <div className="Product-wrapper">
-        {products}
-      </div>
-    );
+    return <div className="flex flex-column pa4">{products}</div>;
   }
 }
 

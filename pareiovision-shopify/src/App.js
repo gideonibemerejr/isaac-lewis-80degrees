@@ -120,8 +120,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="w-100 flex-l flex-column justify-center items-center pa4">
-          <div className="">
+        <header className="w-100 flex-l flex-column justify-center items-center ph4 pt4">
+          <div className="w-100 mv2">
             <a
               onMouseOver={this.handleMouseOver}
               onMouseOut={this.handleMouseOut}
@@ -152,7 +152,7 @@ class App extends Component {
             </a>
           </div>
           {!this.state.isCartOpen && (
-            <div className="flex justify-center items-center ma4">
+            <div className="flex justify-center items-center mh4 mt4">
               <button
                 className="App__view-cart"
                 onClick={() => this.setState({ isCartOpen: true })}
