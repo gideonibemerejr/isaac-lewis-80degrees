@@ -21,9 +21,11 @@ body {
 
 img {
   display: block;
-  height: auto;
 }
 
+.product-image > img {
+  height: 50vh;
+}
 h1 {
   font-weight: 300;
   margin: 0 0 15px;
@@ -321,12 +323,6 @@ h2 {
 
 /* PRODUCTS
  * ============================== */
-.Product {
-  flex: 0 1 31%;
-  margin-left: 1%;
-  margin-right: 1%;
-  margin-bottom: 3%;
-}
 
 .Product__title {
   font-size: 1.3rem;
@@ -464,7 +460,7 @@ h2 {
     justify-content: flex-end;
     align-items: center;
   }
-  .logo-image img {
+  .logo-image > img {
     position: absolute;
     width: 25%;
     top: 0;

@@ -68,7 +68,7 @@ class Product extends Component {
       );
     });
     return (
-      <div className="Product flex flex-column justify-between items-center">
+      <div className="flex flex-column justify-between items-center">
         {this.props.product.images.length ? (
           <div className="product-image w-75 w-25-l flex justify-center">
             <img

@@ -84,7 +84,7 @@ class App extends Component {
                 rel="noopener noreferrer"
                 target="_blank"
                 className="link white dim ma0"
-                href="http://shop.pareiovision.com"
+                href="http://www.shop.pareiovision.com"
               >
                 Shop
               </a>
