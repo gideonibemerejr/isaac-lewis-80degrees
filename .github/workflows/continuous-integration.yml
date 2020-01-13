@@ -12,6 +12,9 @@ jobs:
       - name: Check Landing
         run: cd isaac-lewis-80degrees && ls
 
+      - name: Clear cache
+        run: yarn clear cache
+
       - name: Install dependencies
         run: yarn
 
