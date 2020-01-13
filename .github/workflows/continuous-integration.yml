@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v1
 
       - name: Check Landing
-        run: cd isaac-lewis-80degrees
+        run: cd isaac-lewis-80degrees && ls
 
       - name: Install dependencies
         run: yarn
