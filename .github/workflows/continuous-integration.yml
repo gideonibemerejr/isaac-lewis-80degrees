@@ -9,6 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
+      - name: Check Landing
+        run: cd ~/isaac-lewis-80degrees
+
       - name: Install dependencies
         run: yarn
 
@@ -17,3 +20,16 @@ jobs:
 
       - name: Test
         run: yarn test --watchAll=false
+
+      - name: Check Shop
+        run: cd ~/pareiovision-shopify
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Build
+        run: yarn build
+
+      - name: Test
+        run: yarn test --watchAll=false
+
