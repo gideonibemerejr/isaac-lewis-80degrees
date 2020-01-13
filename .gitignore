@@ -9,7 +9,7 @@
 /coverage
 
 # production
-/build
+/isaac-lewis-80degrees/build
 
 # misc
 .DS_Store
